@@ -17,13 +17,18 @@ function splitSentence(param, splitArray) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  let i = array.length - 1;
+  return `${array[i]}, ${array[0]}`;
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  let result;
+  result = wins * 3 + ties;
+  return result;
 }
 
 // Desafio 6
@@ -62,4 +67,8 @@ module.exports = {
   splitSentence,
 };
 
-/* Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref/jsref_split.asp */
+/*
+Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref/jsref_split.asp
+
+Desafio 4 usa-se `, {} e $ para retornar sem problemas com o Eslint; descoberto com Kesley Muniz, Tonn e deixando o mouse por cima do erro e então clicando em quick fix.
+*/
