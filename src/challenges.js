@@ -32,8 +32,12 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(param) {
   // seu código aqui
+  let biggest = Math.max(...param);
+  let counter = 0;
+  param.forEach((current) => { if (current === biggest) { counter += 1; } });
+  return counter;
 }
 
 // Desafio 7
@@ -71,4 +75,6 @@ module.exports = {
 Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref/jsref_split.asp
 
 Desafio 4 usa-se `, {} e $ para retornar sem problemas com o Eslint; descoberto com Kesley Muniz, Tonn e deixando o mouse por cima do erro e então clicando em quick fix.
+
+Desafio 6 teve como referências https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max para Math.max() e https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach para forEach.
 */
