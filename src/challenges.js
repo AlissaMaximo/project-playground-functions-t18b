@@ -72,6 +72,8 @@ module.exports = {
 };
 
 /*
+REFERÊNCIAS
+
 Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref/jsref_split.asp
 
 Desafio 4 usa-se `, {} e $ para retornar sem problemas com o Eslint; descoberto com Kesley Muniz, Tonn e deixando o mouse por cima do erro e então clicando em quick fix.
