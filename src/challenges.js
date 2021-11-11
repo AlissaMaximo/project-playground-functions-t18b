@@ -45,12 +45,14 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
     return 'cat1';
-  } else if (Math.abs(mouse - cat2) < Math.abs(mouse - cat1)) {
-    return 'cat2';
-  } else {
-    return 'Os gatos trombam e o rato foge';
   }
+  if (Math.abs(mouse - cat2) < Math.abs(mouse - cat1)) {
+    return 'cat2';
+  }
+  return 'Os gatos trombam e o rato foge';
 }
+
+console.log(catAndMouse(0, 6, 12));
 
 // Desafio 8
 function fizzBuzz() {
@@ -79,6 +81,7 @@ module.exports = {
 };
 
 /*
+
 REFERÊNCIAS
 
 Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref/jsref_split.asp
@@ -86,4 +89,7 @@ Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref
 Desafio 4 usa-se `, {} e $ para retornar sem problemas com o Eslint; descoberto com Kesley Muniz, Tonn e deixando o mouse por cima do erro e então clicando em quick fix.
 
 Desafio 6 teve como referências https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max para Math.max() e https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach para forEach.
+
+Desafio 7 possui o Math.abs(), o qual peguei do https://www.w3schools.com/jsref/jsref_abs.asp
+
 */
