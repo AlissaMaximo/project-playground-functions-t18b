@@ -11,8 +11,9 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(param, splitArray) {
+  splitArray = param.split(' ');
+  return splitArray;
 }
 
 // Desafio 4
@@ -60,3 +61,5 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
+/* Desafio 3 feito com .split() visto no W3Schools: https://www.w3schools.com/jsref/jsref_split.asp */
