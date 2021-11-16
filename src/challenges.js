@@ -71,11 +71,24 @@ function fizzBuzz(arrNum) {
 }
 
 // Desafio 9
-function encode() {
+function encode(param) {
   // seu código aqui
+  let newPhrase = param.replace(/a/gi, 1);
+  newPhrase = newPhrase.replace(/e/gi, 2);
+  newPhrase = newPhrase.replace(/i/gi, 3);
+  newPhrase = newPhrase.replace(/o/gi, 4);
+  newPhrase = newPhrase.replace(/u/gi, 5);
+  return newPhrase;
 }
-function decode() {
+
+function decode(param) {
   // seu código aqui
+  let newPhrase = param.replace(/1/g, "a");
+  newPhrase = newPhrase.replace(/2/g, "e");
+  newPhrase = newPhrase.replace(/3/g, "i");
+  newPhrase = newPhrase.replace(/4/g, "o");
+  newPhrase = newPhrase.replace(/5/g, "u");
+  return newPhrase;
 }
 
 module.exports = {
@@ -102,5 +115,7 @@ Desafio 4 usa-se `, {} e $ para retornar sem problemas com o Eslint; descoberto 
 Desafio 6 teve como referências https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max para Math.max() e https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach para forEach.
 
 Desafio 7 possui o Math.abs(), o qual peguei do https://www.w3schools.com/jsref/jsref_abs.asp
+
+Desafio 9 possui o .replace() deste site: https://www.w3schools.com/jsref/jsref_replace.asp
 
 */
