@@ -49,22 +49,24 @@ function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(mouse - cat2) < Math.abs(mouse - cat1)) {
     return 'cat2';
   }
-  return 'Os gatos trombam e o rato foge';
+  if (Math.abs(mouse - cat2) == Math.abs(mouse - cat1)) {
+    return 'Os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
 function fizzBuzz(arrNum) {
   // seu código aqui
-  arrString = [];
+  let arrString = [];
   for (let i = 0; i < arrNum.length; i += 1) {
-    if (arrNum[i] % 3 == 0 && arrNum[i] % 5 == 0) {
-      arrString.push("fizzBuzz");
-    } else if (arrNum[i] % 3 == 0) {
-      arrString.push("fizz");
-    } else if (arrNum[i] % 5 == 0) {
-      arrString.push("buzz");
+    if (arrNum[i] % 3 === 0 && arrNum[i] % 5 === 0) {
+      arrString.push('fizzBuzz');
+    } else if (arrNum[i] % 3 === 0) {
+      arrString.push('fizz');
+    } else if (arrNum[i] % 5 === 0) {
+      arrString.push('buzz');
     } else {
-      arrString.push("bug!");
+      arrString.push('bug!');
     }
   }
   return arrString;
@@ -83,11 +85,11 @@ function encode(param) {
 
 function decode(param) {
   // seu código aqui
-  let newPhrase = param.replace(/1/g, "a");
-  newPhrase = newPhrase.replace(/2/g, "e");
-  newPhrase = newPhrase.replace(/3/g, "i");
-  newPhrase = newPhrase.replace(/4/g, "o");
-  newPhrase = newPhrase.replace(/5/g, "u");
+  let newPhrase = param.replace(/1/g, 'a');
+  newPhrase = newPhrase.replace(/2/g, 'e');
+  newPhrase = newPhrase.replace(/3/g, 'i');
+  newPhrase = newPhrase.replace(/4/g, 'o');
+  newPhrase = newPhrase.replace(/5/g, 'u');
   return newPhrase;
 }
 
