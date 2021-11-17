@@ -2,7 +2,7 @@
 function techList(array, name) {
   // seu código aqui
   let newArr = [];
-  if (array === false) {
+  if (array.length === 0) {
     return 'Vazio!';
   }
 
