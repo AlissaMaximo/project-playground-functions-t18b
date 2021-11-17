@@ -59,8 +59,8 @@ function fizzBuzz(arrNum) {
   // seu código aqui
   let arrString = [];
   for (let i = 0; i < arrNum.length; i += 1) {
-    let divThree = arrNum % 3;
-    let divFive = arrNum % 5;
+    let divThree = arrNum[i] % 3;
+    let divFive = arrNum[i] % 5;
     if (divThree === 0 && divFive === 0) {
       arrString.push('fizzBuzz');
     } else if (divThree === 0) {
