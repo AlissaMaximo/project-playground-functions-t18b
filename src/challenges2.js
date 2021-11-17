@@ -12,8 +12,6 @@ function techList(array, name) {
   }
   return newArr;
 }
-let tecnos = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-console.log(techList(tecnos, "Lucas"));
 
 // Desafio 11
 function generatePhoneNumber() {
