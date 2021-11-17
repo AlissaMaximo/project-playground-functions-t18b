@@ -8,7 +8,7 @@ function techList(array, name) {
 
   array.sort();
   for (let i = 0; i < array.length; i += 1) {
-    newArr.push({ 'tech': array[i], 'name': name });
+    newArr.push({ tech: array[i], name: name });
   }
   return newArr;
 }
