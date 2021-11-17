@@ -43,13 +43,13 @@ function highestCount(param) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
   }
-  if (Math.abs(mouse - cat2) < Math.abs(mouse - cat1)) {
+  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2';
   }
-  if (Math.abs(mouse - cat2) == Math.abs(mouse - cat1)) {
+  if (Math.abs(cat2 - mouse) === Math.abs(cat1 - mouse)) {
     return 'Os gatos trombam e o rato foge';
   }
 }
@@ -59,11 +59,13 @@ function fizzBuzz(arrNum) {
   // seu código aqui
   let arrString = [];
   for (let i = 0; i < arrNum.length; i += 1) {
-    if (arrNum[i] % 3 === 0 && arrNum[i] % 5 === 0) {
+    let divThree = arrNum % 3;
+    let divFive = arrNum % 5;
+    if (divThree === 0 && divFive === 0) {
       arrString.push('fizzBuzz');
-    } else if (arrNum[i] % 3 === 0) {
+    } else if (divThree === 0) {
       arrString.push('fizz');
-    } else if (arrNum[i] % 5 === 0) {
+    } else if (divFive === 0) {
       arrString.push('buzz');
     } else {
       arrString.push('bug!');
