@@ -7,7 +7,7 @@ function techList(array, name) {
   }
   array.sort();
   for (let i = 0; i < array.length; i += 1) {
-    newArr.push({ tech: array[i], name: name });
+    newArr.push({ tech: array[i], name });
   }
   return newArr;
 }
@@ -36,5 +36,5 @@ module.exports = {
 
 /*
   Desafio 10 precisou do sort() para ordenar alfabeticamente os elementos. Fonte: https://www.w3schools.com/jsref/jsref_sort.asp
-
+  
 */
