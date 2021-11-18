@@ -5,7 +5,6 @@ function techList(array, name) {
   if (array.length === 0) {
     return 'Vazio!';
   }
-
   array.sort();
   for (let i = 0; i < array.length; i += 1) {
     newArr.push({ tech: array[i], name: name });
